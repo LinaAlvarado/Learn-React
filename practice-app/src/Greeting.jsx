@@ -27,3 +27,14 @@ export const Greeting = ({title}) => {
     )
     };
     
+export const UserCard =({amount, married, points, addres, nameUser,greet})=>{
+    return(
+        <> 
+            <h1> Holaa {nameUser}</h1>
+            <p> Esta es la información de tu tarjeta</p>
+            <p> Total de dinero:{amount}</p>
+            <p> {married? 'casada': 'soltera'}</p>
+            <p>{addres.city}, {addres.street} </p>
+        </>
+       )
+}
