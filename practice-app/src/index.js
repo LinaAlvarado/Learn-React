@@ -2,7 +2,7 @@ import React from "react";
 import ReactDom from "react-dom/client"; //Para manejar el navegador
 import { Greeting } from "./Greeting";
 import { UserCard } from "./Greeting";
-
+import { Button } from "./button";
 // const rootElement = document.getElementById('root')
 const root = ReactDom.createRoot(document.getElementById("root")); //Elemento raiz
 
@@ -21,5 +21,7 @@ root.render(
                 city:'NewYork' }}
       greet={function (){alert('Hello')}}
     />
+    <Button text='click'/>
+    <Button text={[1,3,4]}/>
   </>
 );
