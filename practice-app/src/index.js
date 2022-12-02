@@ -1,18 +1,20 @@
 import React from "react";
 import ReactDom from "react-dom/client"; //Para manejar el navegador
-import { Greeting } from "./Greeting";
-import { UserCard } from "./Greeting";
-import { Button } from "./button";
+// import { Greeting } from "./Greeting";
+// import { UserCard } from "./Greeting";
+// import { Button } from "./Button";
+import { Card } from "./Card";
+
 // const rootElement = document.getElementById('root')
 const root = ReactDom.createRoot(document.getElementById("root")); //Elemento raiz
 
 root.render(
   <>
-    <Greeting title="hola Mundo" />
+    {/* <Greeting title="hola Mundo" />
     <Greeting title="Buenos Días" />
-    <Greeting title="Usando React" />
+    <Greeting title="Usando React" /> */}
     {/* Se pone llave siempre que no sea un string, para que interprete codigo */}
-    <UserCard
+    {/* <UserCard
       nameUser="Juli"
       amount={3000}
       married={true}
@@ -22,6 +24,7 @@ root.render(
       greet={function (){alert('Hello')}}
     />
     <Button text='click'/>
-    <Button text={[1,3,4]}/>
+    <Button text={[1,3,4]}/> */}
+    <Card/>
   </>
 );
